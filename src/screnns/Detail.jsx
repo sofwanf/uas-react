@@ -22,7 +22,7 @@ const Detail = ({route}) => {
         {data?.map((item, key) => {
           return (
             <View key={key} style={styles.textBox}>
-              <Text style={styles.text}>{item.verse}</Text>
+              <Text style={styles.verseText}>{item.verse}</Text>
               <Text style={styles.text}>{item.text}</Text>
             </View>
           );
@@ -44,7 +44,16 @@ const styles = StyleSheet.create({
     margin: 10,
     flex: 1,
   },
+  verseText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginEnd: 10,
+    color: '#333',
+  },
   textBox: {
     flexDirection: 'row',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+    paddingVertical: 10,
   },
 });

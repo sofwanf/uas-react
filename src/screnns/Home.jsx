@@ -4,10 +4,12 @@ import React from 'react';
 const Home = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('Surat')}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Surat')}>
         <Text style={styles.text}>Baca Quran</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity style={styles.button}>
         <Text style={styles.text}>Setting</Text>
       </TouchableOpacity>
     </View>
@@ -26,12 +28,14 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'white',
-    borderWidth: 2,
-    height: 40,
-    marginBottom: 10,
-    borderRadius: 10,
-    padding: 5,
     fontSize: 18,
-    borderColor: 'white',
+  },
+  button: {
+    backgroundColor: '#1E1E1E',
+    borderRadius: 10,
+    padding: 15,
+    marginVertical: 10,
+    width: '100%',
+    alignItems: 'center',
   },
 });

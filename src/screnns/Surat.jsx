@@ -21,7 +21,7 @@ const Surat = ({navigation}) => {
               onPress={() => navigation.navigate('Detail', {id: item.id})}
               key={key}>
               <View style={styles.textBox}>
-                <Text style={styles.text}>{item.id}</Text>
+                <Text style={styles.idText}>{item.id}</Text>
                 <Text style={styles.text}>{item.name}</Text>
               </View>
             </TouchableOpacity>
@@ -39,12 +39,20 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
   },
-  text: {
+  idText: {
     fontSize: 20,
+    marginEnd: 10,
+  },
+  text: {
+    fontSize: 18,
     margin: 10,
     flex: 1,
   },
   textBox: {
     flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+    paddingVertical: 10,
   },
 });
