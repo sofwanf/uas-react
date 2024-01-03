@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './screnns/Home';
 import Surat from './screnns/Surat';
 import Detail from './screnns/Detail';
+import Setting from './screnns/Setting';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -24,6 +25,11 @@ const App = () => {
         <Stack.Screen
           name="Detail"
           component={Detail}
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          name="Setting"
+          component={Setting}
           options={{headerShown: true}}
         />
       </Stack.Navigator>
