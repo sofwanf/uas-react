@@ -1,4 +1,4 @@
-package com.alquran
+package com.barengsaya.alquran1
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

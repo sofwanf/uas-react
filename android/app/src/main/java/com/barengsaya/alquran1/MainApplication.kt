@@ -1,4 +1,4 @@
-package com.alquran
+package com.barengsaya.alquran1
 
 import android.app.Application
 import com.facebook.react.PackageList
