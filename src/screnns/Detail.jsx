@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     margin: 10,
     flex: 1,
+    color: 'black',
   },
   verseText: {
     fontSize: 18,

@@ -16,7 +16,9 @@ const Home = ({navigation}) => {
           onPress={() => navigation.navigate('Setting')}>
           <Text style={styles.text}>Setting</Text>
         </TouchableOpacity>
-        <Text>{new Date().getFullYear()} Bareng Studio</Text>
+        <Text style={styles.date}>
+          {new Date().getFullYear()} Bareng Studio
+        </Text>
       </View>
     </View>
   );
@@ -51,6 +53,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     marginBottom: 100,
+    color: 'black',
   },
   button: {
     backgroundColor: '#1E1E1E',
@@ -59,5 +62,8 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     width: '100%',
     alignItems: 'center',
+  },
+  date: {
+    color: 'black',
   },
 });

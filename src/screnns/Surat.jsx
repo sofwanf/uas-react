@@ -42,11 +42,13 @@ const styles = StyleSheet.create({
   idText: {
     fontSize: 20,
     marginEnd: 10,
+    color: 'black',
   },
   text: {
     fontSize: 18,
     margin: 10,
     flex: 1,
+    color: 'black',
   },
   textBox: {
     flexDirection: 'row',
